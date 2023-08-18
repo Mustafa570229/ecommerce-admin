@@ -2,3 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+img{
+    max-height: 100%;
+}
+input, textarea, select{
+    @apply border border-gray-200 rounded-sm px-1 w-full py-2 px-3;
+    @apply mb-2;
+}
+input:focus, textarea:focus, select:focus{
+    @apply border-blue-900;
+}
+h1{
+    @apply text-gray-800 mb-4 text-xl;
+}
+label{
+    @apply text-gray-600 text-sm;
+}
+.btn-primary{
+    @apply bg-blue-400 text-white px-4 py-1 rounded-sm shadow-sm;
+}
+table.basic{
+    @apply w-full  rounded-sm shadow-md;
+}
+table.basic tbody tr {
+ @apply   bg-blue-50 hover:bg-white
+}
+table.basic thead tr td,
+table.basic thead tr th
+{
+    @apply text-sm text-white font-bold bg-blue-700 uppercase border-b border-gray-200 px-4 py-2;
+}
+
+table.basic tr td{
+    @apply px-4 py-1 ;
+}
+table.basic a{
+    @apply px-4 rounded-sm inline-flex mx-1 items-center gap-1 text-sm py-1;
+}
+.btn-default, .btn-red{
+    @apply px-4 py-1 rounded-md;
+}
+.btn-red{
+    @apply bg-red-100 text-red-600 hover:bg-red-300 hover:text-red-900 px-4 py-1 text-sm  
+    rounded-md shadow-sm duration-300;
+}
+.btn-default{
+    @apply bg-gray-200 text-gray-800 hover:bg-gray-400 hover:text-gray-900 px-4 py-1 text-sm 
+    rounded-md border border-gray-200 shadow-sm transition-colors duration-300;
+}
